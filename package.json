@@ -10,7 +10,7 @@
     "yaspeller": "./bin/yaspeller"
   },
   "description": "Search tool typos in the text, files and websites",
-  "version": "2.5.1",
+  "version": "2.6.1",
   "license": "MIT",
   "homepage": "https://github.com/hcodes/yaspeller",
   "repository": {
@@ -36,6 +36,7 @@
     "chalk": "~1.1.1",
     "commander": "~2.9.0",
     "eyo-kernel": "~1.0.0",
+    "yandex-speller": "~1.0.0",    
     "entities": "~1.1.1",
     "isutf8": "~1.0.11",
     "lodash": "^3.10.1",
