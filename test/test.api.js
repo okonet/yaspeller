@@ -140,4 +140,19 @@ describe('API', function() {
             done();
         }, {lang: 'en', format: 'html'});
     });
+    
+    it('addPositions', function() {
+        const text = 'Moscaw London\nMoscow Londan';
+        const data = [
+            {word: 'Moscaw', count: 1},
+            {word: 'Londan', count: 1}
+        ];
+        
+        yaspeller.addPositions(text, data);
+        
+        assert.deepEqual(data, [
+            {word: 'Moscaw', count: 1, position: [{line: 1, column: 1}]},
+            {word: 'Londan', count: 1, position: [{line: 2, column: 8}]}
+        ]);
+    });
 });
